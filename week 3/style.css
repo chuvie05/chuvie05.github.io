@@ -1,0 +1,57 @@
+/* ==============
+....
+==============*/
+
+* {
+  color: hotpink;
+}
+h1 {
+  color: limegreen;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1000;
+  font-style: normal;
+}
+/* h2 {
+    color: red;
+} */
+h2,
+h3 {
+  color: green;
+}
+li {
+  color: purple;
+}
+body {
+  color: beige;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+section {
+  text-align: center;
+  border: 1px solid black;
+}
+.green-border {
+  border: 3px dashed green;
+}
+.blue-color {
+  color: blue;
+}
+#first-para {
+  color: chocolate;
+}
+/* p {
+    color: brown;
+    font-weight: bold;
+} */
+/* to add comment CMD / */
+/* curly braces {} */
+/* square bracket [] */
+/* parentheses <> */
+/* round bracket () */
+
+/* syntax - ruls of writting */
