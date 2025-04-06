@@ -5,6 +5,7 @@ h1 {
         font-size:4rem ;
         color: rgb(167, 39, 60);    
         text-align: center;
+        /* modify header text */
         border: 2px solid black;
         /* make a box for header */
 }
