@@ -1,8 +1,19 @@
 h1 {
-    .anton-regular {
         font-family: "Anton", sans-serif;
         font-weight: 400;
         font-style: normal;
         font-size:4rem ;
-      }           
+        color: rgb(167, 39, 60);    
+        text-align: center;
+        border: 2px solid black;
+        /* make a box for header */
+}
+
+.sub {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center; 
+    padding-top: -15px;
 }
