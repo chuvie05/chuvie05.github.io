@@ -25,6 +25,7 @@ h2 {
     text-align: center; 
     margin-top: 4px;
 }
+
 a:link {
     color: brown;
     background-color: transparent;
@@ -40,10 +41,13 @@ h3{
     font-family: "Outfit", "san-serif";
     font-weight: 650;
     color: rgb(167, 39, 60);
+    margin-bottom: 0px;
+    
 }
 p {
     font-family: "Outfit", sans-serif;
     font-weight: 300;
+    margin-top: 4px;
 }
 li {
     font-family: "Outfit", sans-serif;
