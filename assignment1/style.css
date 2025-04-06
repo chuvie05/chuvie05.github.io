@@ -1,20 +1,26 @@
 body {
     margin: 30px 80px 30px 80px;
+    /* set up margin for the body */
+    cursor: url(images/cursor.png), auto;
+    /* customized cursor (I made this cursor mysefl on Adobe Illustration) */
 }
 .topside {
     margin: 5px 110px 5px 110px;
+    /* set up margin for the header */
 }
 h1 {
+        /* modify typography h1 */
         font-family: "Anton", sans-serif;
         font-weight: 400;
         font-style: normal;
         font-size:4rem ;
         color: rgb(167, 39, 60);    
         text-align: center;
+        /* modify h1 text */
         margin-bottom: 0px;
-        /* modify header text */
+        /* adjust margin because it leaves a lot of awkard space at first */
         border: 2px solid black;
-        /* make a box for header */
+        /* make a box for h1 */
 }
 
 h2 {
@@ -24,6 +30,9 @@ h2 {
     font-style: normal;
     text-align: center; 
     margin-top: 4px;
+    /* adjust margin because it leaves a lot of awkard space at first */
+
+    /* modidy typography of h2 */
 }
 
 a:link {
@@ -35,13 +44,16 @@ a:hover {
     color:blue;
     background-color: transparent;
     text-decoration: underline;
+    cursor: url(images/cursor2.png), auto;
 }
-/* make the link change color when hover */
+/* make the link change color and have underline when hover */
+/* make cursor channge when hover, again the cursor I made it myself on Adobe Illustration*/
 h3{
     font-family: "Outfit", "san-serif";
     font-weight: 650;
     color: rgb(167, 39, 60);
     margin-bottom: 0px;
+    /* modify typography of h3 */
     
 }
 p {
@@ -53,7 +65,9 @@ li {
     font-family: "Outfit", sans-serif;
     font-weight: 300;
 }
+/* modify answers typography */
 
+/* placement of pictures */
 .column{
     float: left;
     width: 50%;
