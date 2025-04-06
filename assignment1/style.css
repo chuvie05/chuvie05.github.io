@@ -1,5 +1,5 @@
 body {
-    margin: 20px 60px 20px 60px;
+    margin: 20px 70px 20px 70px;
 }
 .topside {
     margin: 5px 110px 5px 110px;
@@ -36,3 +36,16 @@ a:hover {
     text-decoration: underline;
 }
 /* make the link change color when hover */
+h3{
+    font-family: "Outfit", "san-serif";
+    font-weight: 650;
+    color: rgb(167, 39, 60);
+}
+p {
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+}
+li {
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+}
