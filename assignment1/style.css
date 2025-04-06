@@ -1,5 +1,5 @@
 body {
-    margin: 30px 100px 30px 100px;
+    margin: 30px 80px 30px 80px;
 }
 .topside {
     margin: 5px 110px 5px 110px;
@@ -48,4 +48,17 @@ p {
 li {
     font-family: "Outfit", sans-serif;
     font-weight: 300;
+}
+
+.column{
+    float: left;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
 }
