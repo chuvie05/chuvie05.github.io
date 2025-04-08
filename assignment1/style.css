@@ -21,9 +21,9 @@ h1 {
   font-size: 4rem;
   color: rgb(167, 39, 60);
   text-align: center;
-  /* modify h1 text, i love red haha */
+  /* decorate h1 text, i love red haha */
   margin-bottom: 0px;
-  /* adjust margin because it leaves a lot of awkard space at first */
+  /* adjust margin because it leaves a lot of awkard space between h1 and h2 at first */
   border: 3px solid rgb(167, 39, 60);
   /* make a box for h1 */
 }
@@ -35,7 +35,7 @@ h2 {
   font-style: normal;
   text-align: center;
   margin-top: 4px;
-  /* adjust margin because it leaves a lot of awkard space at first */
+  /* adjust margin because it leaves a lot of awkard space between h1 and h2 at first */
 
   /* decorate h2 */
 }
