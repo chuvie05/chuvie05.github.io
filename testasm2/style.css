@@ -16,9 +16,24 @@ body, html {
     color: black;
   }
   
-  .nav-links {
+  .nav {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
     display: flex;
-    gap: 20px;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--text-color);
   }
   
   .search-bar input {
