@@ -38,30 +38,35 @@
   header {
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
     width: 100%;
   }
   
   /* Navigation styling */
   nav {
-    margin-top: 20px;
+    margin-top: 0px;
     text-align: center;
   }
   
   nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-  }
-  
-  nav ul li {
-    margin-right: 20px;
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
   }
   
   nav a {
     text-decoration: none;
-    color: var(--text-color);
+    color: white;
+    padding: 15px;
+    display: block;
+    text-align: center;
+  }
+
+  nav a:hover{
+    background-color: #938989;
   }
   
   /* Media player styling */

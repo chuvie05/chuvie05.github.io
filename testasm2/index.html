@@ -1,73 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FOCUS CORE</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="scripts.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Core</title>
+    <!-- font 1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- font 2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!-- link to CSS, Java -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-   FOCUS CORE
-  </header>
-
-  <!-- Navigation Section -->
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Popular</a></li>
-      <li><a href="#">Library</a></li>
-      <div class="search-bar">
-        <input type="text" placeholder="Search...">
+<!-- navigation bar -->
+      <nav>
+        <ul>
+          <div class="nav-links">
+            <!-- logo -->
+            <li><div class="logo"><a href="#">FOCUS CORE</a></div></li> 
+            <!-- other pages -->
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Library</a></li>
+          </div>
+          <!-- search bar -->
+          <div class="nav-search">
+            <input type="text" placeholder="Search...">
+          </div>
+        </ul>
+      </nav>
+      <!-- making backgrpound video -->
+      <div  class="one">
+        <h1>FOCUS CORE</h1>
+        <video class="bgvideo"autoplay loop muted play-inline>
+            <source src="videos/856969-hd_1920_1080_25fps.mp4" type="video/mp4">
+          </video>
       </div>
-    </ul>
-  </nav>
-
-  <video id="bgVideo" autoplay muted loop>
-    <source src="https://archive.org/details/13206225-3840-2160-60fps/13163069_3840_2160_60fps.mp4" type="video/mp4" /> <!-- Replace with your video link -->
-  </video>
-
-  <button onclick="togglePopup()" class="music-button">🎵</button>
-
-  <div class="music-popup" id="musicPopup">
-    <div class="track">
-      <img src="testasm2/images/2a3d6f27-3c77-4c8f-b478-eb476778bc4b.jpg" alt="Cover"> <!-- Cover 1 -->
-      <div>
-        <div>Chill Lo Fi Melancholy For Reflection</div>
-        <div>Lolamoore</div>
-        <button onclick="playSong(0)">Play</button>
+      <div class="audio-player">
+        <audio id="audioPlayer" src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/erokia_ambient-wave-56-msfxp7-78.mp3"></audio>
+        <div class="controls">
+          <button onclick="prevSong()">⏮</button>
+          <button onclick="togglePlayPause()">▶️/⏸</button>
+          <button onclick="nextSong()">⏭</button>
+          <button onclick="toggleLoop()">🔁</button>
+        </div>
+        <input type="range" id="seekBar" value="0" step="1">
+        <div id="currentSongTitle"></div>
       </div>
-    </div>
-    <div class="track">
-      <img src="testasm2/images/06aa1fba-74cc-4871-88b2-d1b8eb7106c0.jpg" alt="Cover"> <!-- Cover 2 -->
-      <div>
-        <div>Forest Whisper</div>
-        <div>Nature Tune</div>
-        <button onclick="playSong(1)">Play</button>
-      </div>
-    </div>
-    <div class="track">
-      <img src="testasm2/images/9e67393e-eb2d-4945-9a9a-882dd7403843.jpg" alt="Cover"> <!-- cover 3 -->
-      <div>
-        <div>Focus Piano</div>
-        <div>Zen Master</div>
-        <button onclick="playSong(2)">Play</button>
-      </div>
-    </div>
-  </div>
+    <main>
+    </main>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Media Player Website. All rights reserved.</p>
+        <a href="https://icons8.com/icon/59862/play">Play</a> icon by
+        <a href="https://icons8.com">Icons8</a>
+        <a href="https://icons8.com/icon/61012/pause">Pause</a> icon by
+        <a href="https://icons8.com">Icons8</a>
+      </footer>
 
-  <div class="controls">
-    <button onclick="togglePlayPause()">⏯</button>
-    <button onclick="prevSong()">⏮</button>
-    <button onclick="nextSong()">⏭</button>
-    <button onclick="toggleLoop()">🔁</button>
-  </div>
-
-  <div class="background-toggle" onclick="changeBackground()">🔄</div>
-
-  <audio id="audioPlayer" controls style="display: none"></audio>
-
-  
 </body>
 </html>
