@@ -1,6 +1,6 @@
 const songs = [
     { src: "https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/erokia_ambient-wave-56-msfxp7-78.mp3", title: "Ambient Wave" },
-    { src: "testasm2\music\erokia_ambient-wave-56-msfxp7-78.mp3", title: "Song 2" }
+    { src: "https://dn720700.ca.archive.org/0/items/792340-zhr-chill-background-music-3/792340__zhr__chill-background-music-3.mp3", title: "Song 2" }
   ];
   
   let currentSongIndex = 0;
