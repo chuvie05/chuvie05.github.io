@@ -1,7 +1,8 @@
 // queue song
 const songs = [
   { src: "https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/erokia_ambient-wave-56-msfxp7-78.mp3", title: "Ambient Wave" },
-  { src: "https://dn720700.ca.archive.org/0/items/792340-zhr-chill-background-music-3/792340__zhr__chill-background-music-3.mp3", title: "Chill" }
+  { src: "https://dn720700.ca.archive.org/0/items/792340-zhr-chill-background-music-3/792340__zhr__chill-background-music-3.mp3", title: "Chill" },
+  { src: "https://dn721705.ca.archive.org/0/items/763527-lolamoore-chill-lo-fi-melancholy-for-reflection_202505/763527__lolamoore__chill-lo-fi-melancholy-for-reflection.mp3", title: "Lolamoore Chill Lo-fi" }
 ];
 
 // Settings of song that is current played
