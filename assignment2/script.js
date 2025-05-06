@@ -28,7 +28,7 @@ function loadSong(index) {
 // Media controls
 function togglePlayPause() {
   const icon = document.getElementById('playPauseIcon');
-
+// Switch between pause and play button
   if (player.paused) {
     player.play();
     icon.src = "https://img.icons8.com/ios-glyphs/FFFFFF/30/pause--v2.png";
@@ -39,17 +39,17 @@ function togglePlayPause() {
     icon.alt = "Play";
   }
 }
-
+// previous song
 function prevSong() {
   currentSongIndex = (currentSongIndex - 1 + songs.length) % songs.length;
   loadSong(currentSongIndex);
 }
-
+// Next song
 function nextSong() {
   currentSongIndex = (currentSongIndex + 1) % songs.length;
   loadSong(currentSongIndex);
 }
-
+// Loop song
 function toggleLoop() {
   player.loop = !player.loop;
 }
