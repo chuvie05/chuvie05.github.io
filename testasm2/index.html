@@ -46,10 +46,18 @@
       <div class="audioPlayer">
         <audio id="audioPlayer" src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/erokia_ambient-wave-56-msfxp7-78.mp3"></audio>
         <div class="controls">
-          <button onclick="prevSong()">⏮</button>
-          <button onclick="togglePlayPause()">▶️/⏸</button>
-          <button onclick="nextSong()">⏭</button>
-          <button onclick="toggleLoop()">🔁</button>
+          <button onclick="prevSong()">
+            <img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/skip-to-start--v2.png" alt="Previous" class="control-icon">
+          </button>
+          <button onclick="togglePlayPause()">
+            <img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/pause--v2.png" alt="Play/Pause" class="control-icon">
+          </button>
+          <button onclick="nextSong()">
+            <img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/end--v2.png" alt="Next" class="control-icon">
+          </button>
+          <button onclick="toggleLoop()">
+            <img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/repeat.png" alt="Loop" class="control-icon">
+          </button>
         </div>
         <input type="range" id="seekBar" value="0" step="1">
         <div id="currentSongTitle"></div>
