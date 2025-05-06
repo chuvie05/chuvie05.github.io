@@ -39,23 +39,25 @@
       <!-- making backgrpound video -->
       <div  class="one">
         <div class="dual-timer">
+            <!-- making 2 timer, I want to make one for 25mins and one for 5mins based on Pomodoro Technique since I want to create a website that helps user focus on their tasks -->
           <div class="timer-box">
-            <h3>Study Timer</h3>
+            <h3>Focus</h3>
             <span id="study-time">25:00</span>
           </div>
           <div class="timer-box">
-            <h3>Break Timer</h3>
+            <h3>Break Time</h3>
             <span id="break-time">05:00</span>
           </div>
         </div>
         <h1>FOCUS CORE</h1>
         <video class="bgvideo"autoplay loop muted play-inline>
-            <source src="videos/856969-hd_1920_1080_25fps.mp4" type="video/mp4">
+            <source src="backgroundvid/856969-hd_1920_1080_25fps.mp4" type="video/mp4">
           </video>
       </div>
       <div class="audioPlayer">
         <audio id="audioPlayer" src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/erokia_ambient-wave-56-msfxp7-78.mp3"></audio>
         <div class="controls">
+            <!-- making buttons for media content -->
           <button onclick="prevSong()">
             <img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/skip-to-start--v2.png" alt="Previous" class="control-icon">
           </button>
@@ -68,20 +70,26 @@
           <button onclick="toggleLoop()">
             <img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/repeat.png" alt="Loop" class="control-icon">
           </button>
+          <!-- I change the color of the icon in Icon8 website but nothing changed, I asked ChatGPT how to change it to white, it told me to adding FFFFFF into the URL and it worked -->
         </div>
+        <!-- making a seekbar for media content -->
         <input type="range" id="seekBar" value="0" step="1">
+        <!-- songs tittle -->
         <div id="currentSongTitle"></div>
       </div>
     <main>
     </main>
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Media Player Website. All rights reserved.</p>
-        <a href="https://icons8.com/icon/59862/play">Play</a> icon by
-        <a href="https://icons8.com">Icons8</a>
-        <a href="https://icons8.com/icon/61012/pause">Pause</a> icon by
-        <a href="https://icons8.com">Icons8</a>
+        <p>&copy; 2025 Rocus Core. All rights reserved.</p>
+        <p>
+            Icons by
+            <a href="https://icons8.com">Icons8</a>
+        </p>
       </footer>
 
 </body>
 </html>
+<!-- I choose 'Music for relaxation/study' as my starting point for the project. My initial idea was to make a website that support visitors to focus on their works while having a background music and a chill looping background video-->
+<!-- before I worked on coding, I visuallized what I want to make in Figma, this is the screenshot of it () -->
+<!-- The Pomodoro Technique - two timer were a last minute touch, inspired by one of the Interactive Media class that the professor showed us -->
