@@ -4,6 +4,7 @@ body{
     margin: 0px;
     margin-top: 0px;
 }
+/* logo */
 .logo {
     font-family: "Sansation", sans-serif;
     font-weight: bold;
@@ -13,8 +14,10 @@ main{
     margin-left: 30px;
     margin-right: 30px;
 }
-/* I spend lots of time to choosing fonts for the web, I finally choose 2 fonts that I like the most and blend well together, I tried to avoid choosing too much font */
+/* I spend lots of time to choosing fonts for the web, I finally choose 2 fonts that I like the most and blend well together*/
 
+/* navigation bar design */
+/* make each page into block */
     nav {
         margin-top: 0px;
         text-align: center;
@@ -28,20 +31,23 @@ main{
         background-color: black;
         padding: 0px;
         margin: 0px;
+        align-items: center;
+        padding: 0px 20px 0px 0px;
       }
       
       nav a {
         text-decoration: none;
-        color: white;
+        color: white ;
         font-size: 18px;
         padding: 25px;
         display: block;
         text-align: center;
         
       }
-    
+    /* when hover, the block become lighter */
       nav a:hover{
         background-color: #938989;
+    /* design search bar */
       }
       input {
         padding: 14px;
@@ -50,13 +56,6 @@ main{
         outline: none;
         width: 500px;
 
-      }
-
-
-      nav ul {
-        display: flex;
-        align-items: center;
-        padding: 0px 20px 0px 0px;
       }
       
       .nav-links {
@@ -67,6 +66,9 @@ main{
         margin-left: auto; /* pushes it to the right */
       }
 
+/* Logo in the middle of the screen */
+/* This part is a bit hard so I have to watch a tutorial video on Youtube to know how to set a background video and how to put elements layer on the video*/
+/* This is the video that I watched (https://youtu.be/RIDA6elhmBU?si=VBsjOhMSz65BaABE) */
 .one {
     font-family: "Sansation", sans-serif;
     font-weight: bolder;
@@ -78,7 +80,9 @@ main{
     color: white;
     position: relative;
     overflow: hidden;
-    min-height: 100vh;
+    min-height: 100vh; /* makes video full screen */
+    margin-bottom: 0;
+    
 }
 .bgvideo{
     position: absolute;
@@ -97,7 +101,7 @@ main{
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 10; /* I was struggle because the media player was hidden under the video, I ask watch a few tutorial videos and they said this must higher than the video */
+    z-index: 10; /* I was struggle because the media player was hidden under the video, I watch a few tutorial videos and they said this must higher than the video */
     width: 500px;
     height: 130px;
     padding: 20px;
@@ -109,7 +113,8 @@ main{
     text-align: center;
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   }
-  
+
+  /* media content buttons */
   .controls button {
     margin: 1px 8px 1px 8px;
     padding: 10px 15px;
@@ -124,10 +129,13 @@ main{
     height: 30px;
     object-fit: contain;
   }
+/* adjust seekbar */
   #seekBar {
     width: 90%;
     margin-top: 1px;
   }
+
+  /* Timer */
   .dual-timer {
     position: absolute;
     top: 40px; 
@@ -136,12 +144,12 @@ main{
     z-index: 10; /* above the background */
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 17px;
   }
-  
+  /* design timer box */
   .timer-box {
     background-color: rgba(255, 255, 255, 0.85);
-    padding: 14px 18px;
+    padding: 10px 25px 10px 25px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
@@ -149,7 +157,7 @@ main{
   }
   
   .timer-box h3 {
-    margin: 0 0 5px;
+    margin: 0 0 2px;
     font-size: 16px;
     color: #222;
   }
@@ -159,4 +167,5 @@ main{
     font-weight: bold;
     color: #000;
   }
+
   
