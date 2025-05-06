@@ -87,7 +87,7 @@ main{
     margin-bottom: 0px;
 }
 
-.audio-player {
+.audioPlayer {
     position: absolute;
     bottom: 30px;
     left: 50%;

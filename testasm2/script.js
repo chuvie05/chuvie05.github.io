@@ -9,13 +9,17 @@ const songs = [
   const titleDisplay = document.getElementById('currentSongTitle');
   
   // Load the first song
+  seekBar.value = 0;
+  seekBar.max = 0;
   loadSong(currentSongIndex);
   
   function loadSong(index) {
     player.src = songs[index].src;
     titleDisplay.textContent = songs[index].title;
     player.load();
-    player.play();
+    player.play().catch(e => {
+      console.log("Autoplay blocked, waiting for user gesture:", e);
+    });
   }
   
   // Controls
