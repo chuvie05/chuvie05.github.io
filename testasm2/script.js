@@ -51,3 +51,41 @@ const songs = [
   seekBar.addEventListener('input', () => {
     player.currentTime = seekBar.value;
   });
+
+  let studyDuration = 25 * 60; // 25 minutes
+  let breakDuration = 5 * 60;  // 5 minutes
+  let currentTime = studyDuration;
+  let isStudy = true;
+  let timerInterval;
+  
+  function startDualTimer() {
+    updateTimerDisplay();
+  
+    timerInterval = setInterval(() => {
+      if (currentTime > 0) {
+        currentTime--;
+        updateTimerDisplay();
+      } else {
+        // Switch mode
+        isStudy = !isStudy;
+        currentTime = isStudy ? studyDuration : breakDuration;
+        updateTimerDisplay();
+      }
+    }, 1000);
+  }
+  
+  function updateTimerDisplay() {
+    const mins = String(Math.floor(currentTime / 60)).padStart(2, '0');
+    const secs = String(currentTime % 60).padStart(2, '0');
+  
+    if (isStudy) {
+      document.getElementById('study-time').textContent = `${mins}:${secs}`;
+      document.getElementById('break-time').textContent = "05:00"; // reset display
+    } else {
+      document.getElementById('break-time').textContent = `${mins}:${secs}`;
+      document.getElementById('study-time').textContent = "25:00"; // reset display
+    }
+  }
+  
+  // Start when page loads
+  startDualTimer();

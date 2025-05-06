@@ -111,7 +111,7 @@ main{
   }
   
   .controls button {
-    margin: 1px 10px 1px 10px;
+    margin: 1px 8px 1px 8px;
     padding: 10px 15px;
     font-size: 18px;
     border: none;
@@ -127,5 +127,36 @@ main{
   #seekBar {
     width: 90%;
     margin-top: 1px;
+  }
+  .dual-timer {
+    position: absolute;
+    top: 40px; 
+    /* space between navbar and timer */
+    left: 40px;
+    z-index: 10; /* above the background */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .timer-box {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 14px 18px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    font-family: 'Outfit', sans-serif;
+  }
+  
+  .timer-box h3 {
+    margin: 0 0 5px;
+    font-size: 16px;
+    color: #222;
+  }
+  
+  .timer-box span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
   }
   
