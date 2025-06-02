@@ -2,6 +2,14 @@ body{
     margin: 0px;
     margin-top: 0px;
 }
+body {
+    background-image: url('images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    min-height: 100vh;
+
+}
 .logo {
 font-family: "Sansation", sans-serif;
 font-weight: bold;
@@ -22,7 +30,7 @@ nav ul {
 font-family: "Outfit", sans-serif;
 list-style: none;
 display: flex;
-background-color: black;
+background-color: #120e0d;
 padding: 0px;
 margin: 0px;
 align-items: center;
@@ -40,10 +48,10 @@ text-align: center;
 /* when hover, the block become lighter */
       
 nav a:hover{
-background-color: #938989;
+background-color: #211A17;
 }
 
 .nav-links {
-display: flex;
+display: flex; /* Make the navigation bar horizontal  */
 }
 
