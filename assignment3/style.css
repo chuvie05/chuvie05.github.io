@@ -14,9 +14,8 @@ body,
   background-attachment: fixed; /* Keeps background fixed */
 }
 .logo {
-font-family: "Sansation", sans-serif;
+font-family: "Tektur", sans-serif;
 font-weight: bold;
-font-size: larger;
 }
 
 main{
@@ -30,12 +29,13 @@ text-align: center;
 }
       
 nav ul {
-font-family: "Outfit", sans-serif;
+font-family: "Montserrat", sans-serif;
 list-style: none;
 display: flex;
 background-color: #120e0d;
 padding: 0px;
 margin: 0px;
+font-size: 18px;
 align-items: center;
 padding: 0px 20px 0px 0px;
 }
@@ -43,7 +43,6 @@ padding: 0px 20px 0px 0px;
 nav a {
 text-decoration: none;
 color: white ;
-font-size: 18px;
 padding: 25px;
 display: block;
 text-align: center;
@@ -181,15 +180,19 @@ html, body {
 }
 
 /* style for About page */
-.about{
+.about {
+  font-family: "Tektur", sans-serif;
   text-align: center;
-  font-family: "Alumni Sans SC", sans-serif;
-  font-weight: <weight>;
-  font-style: normal;
-  
+  font-weight: bold;
+  color:  #211A17;
 }
 .content {
   text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size: small;
+  color:  #211A17;
 }
 .aboutbody {
   margin-left: 30%;
