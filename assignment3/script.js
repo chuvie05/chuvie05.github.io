@@ -1,52 +1,55 @@
-const allCards = [
-  { name: "Fire Dragon", image: "https://via.placeholder.com/100?text=🔥+Fire+Dragon" },
-  { name: "Water Sprite", image: "https://via.placeholder.com/100?text=💧+Water+Sprite" },
-  { name: "Earth Golem", image: "https://via.placeholder.com/100?text=🌍+Earth+Golem" },
-  { name: "Wind Falcon", image: "https://via.placeholder.com/100?text=🌬+Wind+Falcon" },
-  { name: "Shadow Mage", image: "https://via.placeholder.com/100?text=🌑+Shadow+Mage" },
-  { name: "Light Angel", image: "https://via.placeholder.com/100?text=🌟+Light+Angel" },
+const openBtn = document.getElementById("openPack");
+const resetBtn = document.getElementById("resetPack");
+const cards = document.querySelectorAll(".card");
+const backImages = document.querySelectorAll(".card-back img");
+const cardContainer = document.querySelector(".card-container");
+
+const cardImages = [
+  "images/tohecard.png",
+  "images/aodaicard.png",
+  "images/lotuscard.png",
+  "images/nonlacard.png",
+  "images/caphephincard.png",
+  "images/banhmicard.png"
 ];
 
-const openPackBtn = document.getElementById('openPackBtn');
-const packResultsDiv = document.getElementById('packResults');
-const collectionDiv = document.getElementById('collection');
+openBtn.addEventListener("click", () => {
+  const shuffled = [...cardImages].sort(() => 0.5 - Math.random()).slice(0, 2);
+  backImages[0].src = shuffled[0];
+  backImages[1].src = shuffled[1];
 
-// Load existing collection from localStorage
-let collection = JSON.parse(localStorage.getItem('collection')) || [];
+  cardContainer.classList.remove("hidden");
 
-function displayCards(container, cards) {
-  container.innerHTML = '';
+  cards.forEach((card, index) => {
+    setTimeout(() => {
+      card.style.opacity = 1;
+      card.classList.add("flip");
+    }, 300 * index);
+  });
+
+  // Disable open button
+  openBtn.disabled = true;
+  openBtn.classList.remove("pulse");
+  openBtn.style.opacity = 0.5;
+
+  // Show reset button after animation
+  setTimeout(() => {
+    resetBtn.classList.remove("hidden");
+  }, 1000);
+});
+
+resetBtn.addEventListener("click", () => {
+  // Reset card states
   cards.forEach(card => {
-    const cardEl = document.createElement('div');
-    cardEl.classList.add('card');
-    cardEl.innerHTML = `
-      <img src="${card.image}" alt="${card.name}" />
-      <p>${card.name}</p>
-    `;
-    container.appendChild(cardEl);
-  });
-}
-
-function openPack() {
-  const shuffled = [...allCards].sort(() => 0.5 - Math.random());
-  const pack = shuffled.slice(0, 3);
-
-  // Update collection
-  pack.forEach(card => {
-    if (!collection.find(c => c.name === card.name)) {
-      collection.push(card);
-    }
+    card.classList.remove("flip");
+    card.style.opacity = 0;
   });
 
-  // Save collection to localStorage
-  localStorage.setItem('collection', JSON.stringify(collection));
+  // Hide and reset elements
+  cardContainer.classList.add("hidden");
+  resetBtn.classList.add("hidden");
 
-  // Display results
-  displayCards(packResultsDiv, pack);
-  displayCards(collectionDiv, collection);
-}
-
-// Initial render
-displayCards(collectionDiv, collection);
-
-openPackBtn.addEventListener('click', openPack);
+  openBtn.disabled = false;
+  openBtn.classList.add("pulse");
+  openBtn.style.opacity = 1;
+});

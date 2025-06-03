@@ -1,21 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Card Pack Opening</title>
-  <link rel="stylesheet" href="styles.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vietera</title>
+<!-- linkto Java, CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <script src="script.js" defer></script>
 </head>
-<body>
-  <h1>🎁 Open a Card Pack</h1>
-  <button id="openPackBtn">Open Pack</button>
+<body class="home">
+<!-- navigation bar -->
+  <nav>
+    <ul>
+      <div class="nav-links">
+      <!-- logo -->
+      <li><div class="logo"><a href="index.html">Vietera</a></div></li> 
+      <!-- other pages -->
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      </div>
+    </ul>
+  </nav>
 
-  <h2>Your Pack:</h2>
-  <div id="packResults" class="card-container"></div>
+<div class="page-wrapper">
+  <div class="center-container">
+    <button id="openPack" class="pulse">Open pack</button>
+</div>
+  <div class="card-container hidden">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front"><img src="images/backcard.png" alt="Back" /></div>
+          <div class="card-back"><img src="" alt="Card 1" /></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front"><img src="images/backcard.png" alt="Back" /></div>
+          <div class="card-back"><img src="" alt="Card 2" /></div>
+        </div>
+      </div>
+    </div>
 
-  <h2>Your Collection:</h2>
-  <div id="collection" class="card-container"></div>
+<button id="resetPack" class="hidden">Open Another Pack</button>
 
-  <script src="script.js"></script>
 </body>
 </html>
