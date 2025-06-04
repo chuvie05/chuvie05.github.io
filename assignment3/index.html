@@ -22,7 +22,7 @@
   <nav>
     <ul>
       <div class="nav-links">
-      <!-- logo -->
+      <!-- logo bring baack to homepage -->
       <li><div class="logo"><a href="index.html">VietEra</a></div></li> 
       <!-- other pages -->
       <li><a href="about.html">About</a></li>
@@ -30,12 +30,15 @@
       </div>
     </ul>
   </nav>
-
+<!-- Contents -->
 <div class="page-wrapper">
+<!-- Create page wrapper class to center content -->
   <div class="center-container">
-    <button id="openPack" class="pulse">Open pack</button>
+    <!-- Container for the central button that opens the card pack -->
+    <button id="openPack" class="pulse">Open pack</button> <!-- make pulse button -->
 </div>
-  <div class="card-container hidden">
+  <div class="card-container hidden"> <!-- Container for cards; initially hidden until button click -->
+    <!-- appear 2 cards randomly, flipping from back to front -->
       <div class="card">
         <div class="card-inner">
           <div class="card-front"><img src="images/backcard.png" alt="Back" /></div>
@@ -49,7 +52,7 @@
         </div>
       </div>
     </div>
-
+<!-- Make another button to reset (open another pack) -->
 <button id="resetPack" class="hidden">Open Another Pack</button>
 
 </body>
