@@ -1,0 +1,116 @@
+body.gallery-page {
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+  background-image: url('images/backgroundgallery.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  background-color: #120e0d;
+  margin: 0;
+  padding: 0 20px;
+  align-items: center;
+}
+
+nav a {
+  font-family: "Montserrat", sans-serif;;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 25px;
+  display: block;
+}
+
+nav a:hover {
+  background-color: #211A17;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.logo a {
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Tektur", sans-serif;
+  color: white;
+}
+
+.gallery-title {
+  font-family: "Tektur", sans-serif;
+  text-align: center;
+  font-size: 2.2rem;
+  color:  #211A17;
+  margin-top: 29px;
+  margin-bottom: 10px;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
+}
+
+.flip-card {
+  width: 233px;
+  height: 382px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.flip-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.flip-back {
+  background-color: #675130;
+  color: #D1BFA6;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;;
+}
+
+.card-text {
+  font-size: 1em;
+  line-height: 1.5;
+}
