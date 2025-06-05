@@ -194,18 +194,18 @@ html, body {
   font-weight: bold;
   color:  #211A17;
 }
-.content {
+#content{
+  font-weight: 500;
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-style: italic;
-  font-weight:100;
-  font-size: small;
+  font-size:medium;
   color:  #211A17;
 }
 .aboutbody {
   margin-left: 30%;
   margin-right: 30%;
-  margin-top: 10%;
+  margin-top: 15%;
   margin-bottom: 10%;
 }
 .bodyabt {
