@@ -8,27 +8,28 @@ body.gallery-page {
   background-position: center;
   background-attachment: fixed;
 }
+
 /* navigation bar styling */
 nav {
   text-align: center;
 }
 
 nav ul {
+  font-family: "Montserrat", sans-serif;
   list-style: none;
   display: flex;
   background-color: #120e0d;
-  margin: 0;
-  padding: 0 20px;
+  padding: 0px 20px 0px 0px;
+  margin: 0px;
+  font-size: 18px !important;
   align-items: center;
 }
-
 nav a {
-  font-family: "Montserrat", sans-serif;;
   text-decoration: none;
   color: white;
-  font-size: 18px;
   padding: 25px;
   display: block;
+  text-align: center;
 }
 
 nav a:hover {
@@ -41,7 +42,7 @@ nav a:hover {
 
 .logo a {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Tektur", sans-serif;
   color: white;
 }
